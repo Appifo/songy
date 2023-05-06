@@ -1,0 +1,32 @@
+#--------------------------Application-------------------------------
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+#--------------------------Frontend-------------------------------
+
+/frontend/node_modules/
+
+# Local env files
+/frontend/.env.local
+/frontend/.env.*.local
+
+#--------------------------Backend-------------------------------
+
+/backend/node_modules/
+
+# Local env files
+/backend/.env.local
+/backend/.env.*.local
+
+# Package lock files
+/backend/package-lock.json
+
+# Misc
+/backend/Docs.txt
