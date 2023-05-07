@@ -14,6 +14,12 @@ app.get("/status", (req, res) => {
   });
 });
 
+app.post("/register", (req, res) => {
+  res.send({
+    message: "User registered successfully!"
+  });
+});
+
 app.listen(process.env.PORT || 8081, () => {
   console.log("Serve is listening on 8081");
 });
