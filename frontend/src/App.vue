@@ -1,30 +1,39 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="app">
+    <Sidebar />
+    <div class="main">
+      <Appbar />
+      <router-view style="width: 100%; height: 80vh; padding: 0 80px; overflow: auto;"></router-view>
+    </div>
   </div>
-  <router-view/>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script lang="ts">
+import { defineComponent } from "vue";
+import Appbar from "./components/layout/Appbar.vue";
+import Sidebar from "./components/layout/Sidebar.vue";
+
+export default defineComponent({
+  name: "App",
+  components: {
+    Appbar,
+    Sidebar,
+  },
+});
+</script>
+ 
+<style scoped>
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  user-select: none;
+  background: var(--secondary);
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 </style>
