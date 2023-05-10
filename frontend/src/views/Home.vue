@@ -1,18 +1,38 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <SongsList v-if="state.songs.code === 200" title="Top 50 Songs 2022 Year" :songs="state.songs.data.slice(0, 4)"/>
+    <SongsList v-if="state.songs.code === 200" title="Top 10 Hit Songs 2023 Year" :songs="state.songs.data.slice(4, 8)"/>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import { defineComponent, onMounted, reactive, ref } from "vue";
+import SongsList from "@/components/SongsList.vue";
+import appService from "@/services/appService";
 
 export default defineComponent({
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld,
+    SongsList,
+  },
+
+  setup() {
+    let state: any = reactive({
+      songs: [],
+      topSongsEachYear: {},
+      hitSongsEachYear: {},
+    })
+
+    onMounted(() => {
+      loadSongs()
+    })
+
+    // Methods........
+    const loadSongs = async () => {
+      state.songs = await appService.songsList();
+    }
+
+    return { state };
   },
 });
 </script>
