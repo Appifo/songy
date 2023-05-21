@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const cors = require("cors");
 const app = express();
+const songs = require("./songs-list.json");
 
 app.use(morgan("combined"));
 app.use(bodyParser.json());
@@ -17,6 +18,13 @@ app.get("/status", (req, res) => {
 app.post("/register", (req, res) => {
   res.send({
     message: "User registered successfully!"
+  });
+});
+
+app.get("/songs", (req, res) => {
+  res.send({
+    code: 200,
+    data: songs.data
   });
 });
 
