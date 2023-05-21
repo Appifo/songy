@@ -20,6 +20,6 @@ app.post("/register", (req, res) => {
   });
 });
 
-app.listen(process.env.PORT || 8081, () => {
-  console.log("Serve is listening on 8081");
+app.listen(process.env.PORT || 2020, () => {
+  console.log("Serve is listening on port", process.env.PORT || 2020);
 });
