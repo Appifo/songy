@@ -1,6 +1,9 @@
 <template>
   <div class="song-card">
-    <img :src="props.song.thumbnail" alt="img" />
+    <div class="show-play-control" v-show="showOnHover" @click="playSong()">
+      <i class="fa fa-light fa-play btn"></i>
+    </div>
+    <img :src="props.song.thumbnail" alt="img" @mouseenter="showOnHover = true" @mouseleave="showOnHover = false"/>
     <div class="song-info">
       <h1 class="title">{{ props.song.title }}</h1>
       <div class="info">
@@ -11,21 +14,26 @@
   </div>
 </template>
     
-  <script lang="ts">
-import { defineComponent } from "vue";
+<script lang="ts">
+import { defineComponent, onMounted, ref } from "vue";
 
 export default defineComponent({
   name: "SongCard",
   props: {
     song: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
 
   setup(props) {
-    return {props}
-  }
+    let showOnHover = ref(false)
+
+    const playSong = async () => {
+    }
+
+    return { props, showOnHover, playSong };
+  },
 });
 </script>
   
@@ -38,28 +46,46 @@ export default defineComponent({
   color: var(--light);
   background: var(--primary);
   border-radius: 15px;
+  position: relative;
 }
 
 .song-card img {
-    width: 100%;
-    height: 205px;
-    border-radius: 15px;
+  width: 100%;
+  height: 205px;
+  border-radius: 15px;
+}
+
+.show-play-control {
+  width: 200px;
+  height: 205px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.show-play-control i {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary);
 }
 
 .title {
-    padding: 5px 0;
-    font-size: 18px;
-    font-weight: 500;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .subtitle {
-    font-size: 11px;
-    font-weight: 500;
+  font-size: 11px;
+  font-weight: 500;
 }
 
 .info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
