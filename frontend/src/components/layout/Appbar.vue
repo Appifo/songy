@@ -2,12 +2,12 @@
   <div class="app-bar">
     <div class="navs">
       <input type="text" placeholder="Search">
-      <img src="@/assets/images/account.jpeg" alt="account" class="account">
+      <img src="@/assets/images/account.jpg" alt="account" class="account">
     </div>
   </div>
 </template>
     
-    <script lang="ts">
+<script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
