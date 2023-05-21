@@ -1,8 +1,8 @@
-import api from "./api";
+import Api from "./api";
 
 export default {
     async songsList() {
-        const response:any = await api().get('songs')
+        const response:any = await Api.get('songs')
         return response?.data
     }
 }

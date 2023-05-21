@@ -1,7 +1,7 @@
-import api from "./api";
+import Api from "./api";
 
 export default {
     register(creds: object) {
-        return api().post("register", creds)
+        return Api.post("register", creds)
     }
 }
