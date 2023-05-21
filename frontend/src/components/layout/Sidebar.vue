@@ -67,4 +67,13 @@ export default defineComponent({
   background: var(--primary);
   margin-right: 15px;
 }
+
+.active-nav-link .title {
+  color: var(--light);
+}
+
+.active-nav-link .menu-icon {
+  color: var(--tertiary);
+  opacity: 0.6;
+}
 </style>
