@@ -2,7 +2,7 @@
   <div class="songs-list">
     <div class="list-header">
       <h1 class="title">{{ props.title }}</h1>
-      <router-link to="" class="link">See all</router-link>
+      <router-link to="/browse" class="link">See all</router-link>
     </div>
     <div class="list-content">
       <SongCard v-for="song in props.songs" :key="song._id" :song="song"/>
