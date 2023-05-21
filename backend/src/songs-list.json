@@ -1,0 +1,172 @@
+{
+    "data": [
+        {
+            "_id": 0,
+            "title": "Rafta Rafta",
+            "label": "Atif Aslam",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft1/312_resize2x_200x200.webp",
+            "singer": "Atif Aslam",
+            "released": "16 Jan,2022",
+            "duration": "03:24",
+            "audioBitrate": "320 Kbps",
+            "fileName": "rafta-rafta.mp3",
+            "description": ""
+        },
+        {
+            "_id": 1,
+            "title": "Hum Tum",
+            "label": "Hum Network",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft7/3188_resize2x_200x200.webp",
+            "singer": "Ali Zafar, Damiya Farooq",
+            "released": "19 Jun,2022",
+            "duration": "03:50",
+            "audioBitrate": "320 Kbps",
+            "fileName": "hum-tum.mp3",
+            "description": ""
+        },
+        {
+            "_id": 2,
+            "title": "Do Bol",
+            "label": "IFFI Production",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft5/2024_resize2x_200x200.webp",
+            "singer": "Aima Baig",
+            "released": "11 Apr,2022",
+            "duration": "05:14",
+            "audioBitrate": "320 Kbps",
+            "fileName": "do-bol.mp3",
+            "description": ""
+        },
+        {
+            "_id": 3,
+            "title": "Mere Humsafar",
+            "label": "ARY Digital",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft9/4183_resize2x_200x200.webp",
+            "singer": "Yashal Shahid",
+            "released": "21 Jul,2022",
+            "duration": "05:51",
+            "audioBitrate": "320 Kbps",
+            "fileName": "mere-humsafar.mp3",
+            "description": ""
+        },
+        {
+            "_id": 4,
+            "title": "Parizaad",
+            "label": "Hum Network",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft11/5083_resize2x_200x200.webp",
+            "singer": "Waqar Ali, Asrar",
+            "released": "16 Aug,2022",
+            "duration": "05:00",
+            "audioBitrate": "320 Kbps",
+            "fileName": "parizaad.mp3",
+            "description": ""
+        },
+        {
+            "_id": 5,
+            "title": "Sajan Das Na",
+            "label": "Giraffe Pakistan",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft8/3892_resize2x_200x200.webp",
+            "singer": "Atif Aslam",
+            "released": "02 Jul,2022",
+            "duration": "03:57",
+            "audioBitrate": "320 Kbps",
+            "fileName": "sajan-das-na.mp3",
+            "description": ""
+        },
+        {
+            "_id": 6,
+            "title": "Mujhe Pyar Hua Tha",
+            "label": "1944121 Records DK",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft17/8480_resize2x_200x200.webp",
+            "singer": "Kaifi Khalil",
+            "released": "08 Mar,2023",
+            "duration": "02:54",
+            "audioBitrate": "320 Kbps",
+            "fileName": "mujhe-pyar-hua-tha.mp3",
+            "description": ""
+        },
+        {
+            "_id": 7,
+            "title": "Zard",
+            "label": "Zee Music Company",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft7/3463_resize2x_200x200.webp",
+            "singer": "Rasiq Imtiyaz Khan",
+            "released": "26 Jun,2022",
+            "duration": "04:45",
+            "audioBitrate": "320 Kbps",
+            "fileName": "zard.mp3",
+            "description": ""
+        },
+        {
+            "_id": 8,
+            "title": "Zindagi Aik Paheli",
+            "label": "7th Sky Entertainment",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft16/7607_resize2x_200x200.webp",
+            "singer": "Sahir Ali Bagga",
+            "released": "02 Nov,2022",
+            "duration": "06:11",
+            "audioBitrate": "320 Kbps",
+            "fileName": "zindagi-aik-paheli.mp3",
+            "description": ""
+        },
+        {
+            "_id": 9,
+            "title": "Saaiyan",
+            "label": "Sahir Ali Bagga",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft5/2021_resize2x_200x200.webp",
+            "singer": "Sahir Ali Bagga",
+            "released": "11 Apr,2022",
+            "duration": "04:02",
+            "audioBitrate": "320 Kbps",
+            "fileName": "saaiyan.mp3",
+            "description": ""
+        },
+        {
+            "_id": 10,
+            "title": "Ishq Hai",
+            "label": "ARY Digital",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft27/13116_resize2x_200x200.webp",
+            "singer": "Rahat Fateh Ali Khan",
+            "released": "17 Mar,2023",
+            "duration": "05:20",
+            "audioBitrate": "320 Kbps",
+            "fileName": "ishq-hai.mp3",
+            "description": ""
+        },
+        {
+            "_id": 11,
+            "title": "Kana Yaari",
+            "label": "Giraffe Pakistan",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft8/3570_resize2x_200x200.webp",
+            "singer": "Kaifi Khalil",
+            "released": "27 Jun,2022",
+            "duration": "03:47",
+            "audioBitrate": "320 Kbps",
+            "fileName": "kana-yaari.mp3",
+            "description": ""
+        },
+        {
+            "_id": 12,
+            "title": "Beparwah",
+            "label": "Giraffe Pakistan",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft8/3876_resize2x_200x200.webp",
+            "singer": "Momina Mustehsan",
+            "released": "02 Jul,2022",
+            "duration": "04:33",
+            "audioBitrate": "320 Kbps",
+            "fileName": "beparwah.mp3",
+            "description": ""
+        },
+        {
+            "_id": 13,
+            "title": "Tere Bin Ost",
+            "label": "7th Sky Entertainment",
+            "thumbnail": "https://djmaza.live/siteuploads/thumb/sft18/8702_resize2x_200x200.webp",
+            "singer": "Shani Arshad",
+            "released": "01 Feb,2023",
+            "duration": "05:33",
+            "audioBitrate": "320 Kbps",
+            "fileName": "tere-bin-ost.mp3",
+            "description": ""
+        }
+    ]
+}
