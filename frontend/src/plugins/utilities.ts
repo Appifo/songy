@@ -1,4 +1,13 @@
 /**
+ * Return ellipsis of a given string
+ * @param {string} text
+ * @param {number} size
+ */
+export const ellipsis = (text: string, size: number) => {
+  return `${text.split(' ').slice(0, size).join(' ')}...`;
+};
+
+/**
  * Return time string(mm:ss) of a given decimal number
  * @param {number} number
  */
