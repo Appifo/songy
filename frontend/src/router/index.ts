@@ -1,30 +1,31 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
+import config from '@/config';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Dashboard',
     component: Home,
-    meta: { title: (route: { name: any }) => `Songy | ${route.name}` }
+    meta: { title: (route: { name: any }) => `${ config.appName } | ${ route.name }` }
   },
   {
     path: '/browse',
     name: 'Browse',
     component: () => import(/* webpackChunkName: "browse" */ '../views/Browse.vue'),
-    meta: { title: (route: { name: any }) => `Songy | ${route.name}` }
+    meta: { title: (route: { name: any }) => `${ config.appName } | ${ route.name }` }
   },
   {
     path: '/favorite',
     name: 'Favorite',
     component: () => import(/* webpackChunkName: "favorite" */ '../views/Favorite.vue'),
-    meta: { title: (route: { name: any }) => `Songy | ${route.name}` }
+    meta: { title: (route: { name: any }) => `${ config.appName } | ${ route.name }` }
   },
   {
     path: '/register',
     name: 'About',
     component: () => import(/* webpackChunkName: "register" */ '../views/Register.vue'),
-    meta: { title: (route: { name: any }) => `Songy | ${route.name}` }
+    meta: { title: (route: { name: any }) => `${ config.appName } | ${ route.name }` }
   }
 ]
 
