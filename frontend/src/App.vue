@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <h1>Song Library</h1>
     <Sidebar />
     <div class="main">
       <Appbar />
